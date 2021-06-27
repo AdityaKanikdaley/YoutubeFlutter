@@ -1,9 +1,12 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:youtube/models/channel_info.dart';
 import 'package:youtube/models/video_list.dart';
 import 'package:youtube/screens/video_screen.dart';
+import 'package:youtube/screens/webView.dart';
 import 'package:youtube/utils/services.dart';
+import 'package:intl/intl.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -20,6 +23,8 @@ class _HomeScreenState extends State<HomeScreen> {
   String _nextPageToken;
   ScrollController _scrollController;
 
+  final dateFormat = new DateFormat('dd/MM/yyyy');
+
   @override
   void initState() {
     super.initState();
@@ -27,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
     _nextPageToken = '';
     _scrollController = ScrollController();
     _videosList = VideosList();
-    _videosList.videos = List();
+    _videosList.videos = [];
     _getChannelInfo();
   }
 
@@ -87,10 +92,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       onTap: () async {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
-                              return VideoPlayerScreen(
-                                videoItem: videoItem,
-                              );
-                            }));
+                          return VideoPlayerScreen(
+                            videoItem: videoItem,
+                          );
+                        }));
                       },
                       child: Container(
                         padding: EdgeInsets.all(20.0),
@@ -101,7 +106,17 @@ class _HomeScreenState extends State<HomeScreen> {
                                   .video.thumbnails.thumbnailsDefault.url,
                             ),
                             SizedBox(width: 20),
-                            Flexible(child: Text(videoItem.video.title)),
+                            Flexible(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(videoItem.video.title),
+                                  SizedBox(height: 8),
+                                  Text("Published on: ${dateFormat.format(videoItem.video.publishedAt)}")
+                                  // ${videoItem.video.publishedAt}
+                                ],
+                              ),
+                            )
                           ],
                         ),
                       ),
@@ -120,33 +135,46 @@ class _HomeScreenState extends State<HomeScreen> {
     return _loading
         ? CircularProgressIndicator()
         : Container(
-      padding: EdgeInsets.all(20.0),
-      child: Card(
-        child: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Row(
-            children: [
-              CircleAvatar(
-                backgroundImage: CachedNetworkImageProvider(
-                  _item.snippet.thumbnails.medium.url,
-                ),
-              ),
-              SizedBox(width: 20),
-              Expanded(
-                child: Text(
-                  _item.snippet.title,
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w400,
+            padding: EdgeInsets.all(20.0),
+            child: Card(
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      CircleAvatar(
+                        radius: 50,
+                        backgroundImage: CachedNetworkImageProvider(
+                          _item.snippet.thumbnails.medium.url,
+                        ),
+                      ),
+                      SizedBox(width: 20),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Text(
+                            _item.snippet.title,
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                          Text('Videos: ${_item.statistics.videoCount}'),
+                        ],
+                      )
+                      // IconButton(
+                      //     onPressed: (){
+                      //       Navigator.push(context, MaterialPageRoute(builder: (context)=> webView()));
+                      //     },
+                      //     icon: Icon(Icons.youtube_searched_for)),
+                    ],
                   ),
                 ),
               ),
-              Text(_item.statistics.videoCount),
-              SizedBox(width: 20),
-            ],
-          ),
-        ),
-      ),
-    );
+            ),
+          );
   }
 }

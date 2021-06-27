@@ -1,0 +1,54 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "QeNI_BYByt4m58FlLlN1Qi6cfrc",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "Hh0QBKOFAdGqRXNckvlao9weZ70",
+      "id": "UCFeodEXsVCtxbqFPZwiQniQ",
+      "snippet": {
+        "title": "Aditya Kanikdaley",
+        "description": "Its all about Instruments!! \n#drums #tabla #cajon #adityakanikdaley #musician",
+        "publishedAt": "2020-04-26T23:28:00.444567Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AKedOLQVUZjXybWsETxkykZXrOYn0hlPzr6d8IkIfIVx=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AKedOLQVUZjXybWsETxkykZXrOYn0hlPzr6d8IkIfIVx=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AKedOLQVUZjXybWsETxkykZXrOYn0hlPzr6d8IkIfIVx=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Aditya Kanikdaley",
+          "description": "Its all about Instruments!! \n#drums #tabla #cajon #adityakanikdaley #musician"
+        },
+        "country": "IN"
+      },
+      "contentDetails": {
+        "relatedPlaylists": {
+          "likes": "",
+          "favorites": "",
+          "uploads": "UUFeodEXsVCtxbqFPZwiQniQ"
+        }
+      },
+      "statistics": {
+        "viewCount": "2166",
+        "hiddenSubscriberCount": true,
+        "videoCount": "6"
+      }
+    }
+  ]
+}

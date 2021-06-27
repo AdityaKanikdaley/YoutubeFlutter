@@ -21,6 +21,8 @@ environment:
   sdk: ">=2.6.0 <3.0.0"
 
 dependencies:
+  intl: ^0.17.0
+  webview_flutter: ^2.0.9
   http: ^0.13.3
   youtube_player_flutter: ^8.0.0
   cached_network_image: ^3.0.0

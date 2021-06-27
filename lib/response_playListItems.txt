@@ -1,0 +1,246 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "kzm1rNDJ7h946P0mfj3-Du6m_nk",
+  "nextPageToken": "CAUQAA",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "mIjK4jylTNzTGfB5MGhPHYC3Vdc",
+      "id": "VVVGZW9kRVhzVkN0eGJxRlBad2lRbmlRLnhrX3c2Z1I1Rmk4",
+      "snippet": {
+        "publishedAt": "2020-06-14T12:35:14Z",
+        "channelId": "UCFeodEXsVCtxbqFPZwiQniQ",
+        "title": "MALHARI | BAJIRAO MASTANI | CAJON COVER",
+        "description": "For best audio experience, use earphones....! 🎧🎧\n\nHey guys, this is my new  CAJON COVER on the song MALHARI from the film BAJIRAO MASTANI.\n\nIf you liked it, please like it, share it with your friends.😀😀\nAlso drop a comment down.\nIf you are new to this channel, don't forget to subscribe to my channel !😊😊\n\nPlayed by: Aditya Kanikdaley \n\nSong Credits:\nSinger: Vishal Dadlani\nMusic: Sanjay Leela Bhansali \nLyrics: Prashant Ingole\nMovie: Bajirao Mastani\nPublisher: Eros Now\n\nLink:\nhttps://youtu.be/l_MyUGq7pgs\n\nFollow me:\nFacebook: https://www.facebook.com/profile.php?id=100004353226781\nInstagram: https://www.instagram.com/aditya_kanikdaley/?hl=en",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xk_w6gR5Fi8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xk_w6gR5Fi8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xk_w6gR5Fi8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/xk_w6gR5Fi8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/xk_w6gR5Fi8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Aditya Kanikdaley",
+        "playlistId": "UUFeodEXsVCtxbqFPZwiQniQ",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "xk_w6gR5Fi8"
+        },
+        "videoOwnerChannelTitle": "Aditya Kanikdaley",
+        "videoOwnerChannelId": "UCFeodEXsVCtxbqFPZwiQniQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "JtW6ZKowFez4aAfvr3w4xTX9O_w",
+      "id": "VVVGZW9kRVhzVkN0eGJxRlBad2lRbmlRLktEVndjUGEyN0tJ",
+      "snippet": {
+        "publishedAt": "2020-06-06T09:58:46Z",
+        "channelId": "UCFeodEXsVCtxbqFPZwiQniQ",
+        "title": "Badshah | Tabla Cover | Genda Phool",
+        "description": "Hey guys !\nThis is my new tabla cover on the  song \"Genda Phool\".\nFor best audio experience, use earphones....! 🎧🎧\nIf you liked it, please like it, share it with your friends.😀😀\nAlso drop a comment down.\nIf you are new to this channel, don't forget to subscribe to my channel !😊😊\nIf you like, suggest me some more songs in the comment box !\n\nHitmaker Badshah redefining his sound scape with \"Genda Phool\" , featuring super gorgeous Jacqueline Fernandez and Payal Dev on lead vocals. Genda Phool is a steamy track which has a distinct folk melody fused with uber urban sounds. Genda Phool potentially marks a new era for Badshah.\n\nOriginal Credits:\nSong : Genda Phool\nArtist : Badshah & Payal Dev \nStarring : Badshah & Jacqueline Fernandez\nOriginal Lyrics : Bengali Folk\nLyrics & Compose : Badshah\nMusic Arrangements : Aditya Dev \nMix & Master : Aditya Dev \nDotara Player : Tapas Roy\nInstruments recording : Rahul Sharma At AMV Studio \nAstt Sound Engineer : Sameer\nVocals Dubbing : Aditya Dev Studio\n\nLink:\nhttps://youtu.be/SD4Z8dlZPd8\n\nFollow me:\nFacebook: https://www.facebook.com/profile.php?id=100004353226781\nInstagram: https://www.instagram.com/aditya_kanikdaley/?hl=en\n\nAudio on Sony Music Entertainment India Pvt.Ltd (C) 2020",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/KDVwcPa27KI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/KDVwcPa27KI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/KDVwcPa27KI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/KDVwcPa27KI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/KDVwcPa27KI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Aditya Kanikdaley",
+        "playlistId": "UUFeodEXsVCtxbqFPZwiQniQ",
+        "position": 1,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "KDVwcPa27KI"
+        },
+        "videoOwnerChannelTitle": "Aditya Kanikdaley",
+        "videoOwnerChannelId": "UCFeodEXsVCtxbqFPZwiQniQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "ij3mt5JjocgX0I4i0o9mo9VrMoI",
+      "id": "VVVGZW9kRVhzVkN0eGJxRlBad2lRbmlRLmhtakU4YjFVQUt3",
+      "snippet": {
+        "publishedAt": "2020-05-28T16:16:35Z",
+        "channelId": "UCFeodEXsVCtxbqFPZwiQniQ",
+        "title": "Shiv Tandav Stotram | Powerful Tabla Edition",
+        "description": "Hey guys !!!!\nThis is the new powerful tabla cover on the song \"SHIV TANDAVA STOTRAM\". \nFor best audio experience, use earphones....! 🎧🎧\nIf you liked it, please like it, share it with your friends.😀😀\nAlso drop a comment down.\nIf you are new to this channel, don't forget to subscribe to my channel !😊😊\nIf you like, suggest me some more songs in the comment box !\n\nShiva Tandav Stotra describes Shiva's power and beauty.  The Asura King of Lanka, Ravan has written this potent stotra which invokes the Lord of destruction who destroys the death.\n\nSong Credits:\nSong: Shiva Tandava Stotram\nArtist: Uma Mohan\nAlbum: Divine Chants Of Shiva\n\nLink to original video:\nhttps://youtu.be/0xmyEp2uCfE\n\nPublisher:\nTimes Music Spiritual\n\nFollow me:\nFacebook: https://www.facebook.com/profile.php?id=100004353226781\nInstagram: https://www.instagram.com/aditya_kanikdaley/?hl=en",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/hmjE8b1UAKw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/hmjE8b1UAKw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/hmjE8b1UAKw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/hmjE8b1UAKw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/hmjE8b1UAKw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Aditya Kanikdaley",
+        "playlistId": "UUFeodEXsVCtxbqFPZwiQniQ",
+        "position": 2,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "hmjE8b1UAKw"
+        },
+        "videoOwnerChannelTitle": "Aditya Kanikdaley",
+        "videoOwnerChannelId": "UCFeodEXsVCtxbqFPZwiQniQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Ws4qkHq9rg0Qi8TSB9FnoXxg9AQ",
+      "id": "VVVGZW9kRVhzVkN0eGJxRlBad2lRbmlRLkh1eEozcnRfbEZr",
+      "snippet": {
+        "publishedAt": "2020-05-20T17:39:13Z",
+        "channelId": "UCFeodEXsVCtxbqFPZwiQniQ",
+        "title": "Kajra Re - Tabla Cover | OLD IS GOLD | (Use Earphones) 🎧",
+        "description": "Hey guys !\nThis is my new tabla cover on Kajra Re song. For best audio experience (base & surround sound) use EARPHONES/HEADPHONES !!!! 🎧🎧🎧🎧\nIf you liked it, please like it, share it with your friends.😀😀\nAlso drop a comment down.\nIf you are new to this channel, don't forget to subscribe to my channel !😊😊\nIf you like, suggest me some more songs in the comment box !\n\nSong Credits:\nSong: Kajra Re\nSingers: Alisha Chinai, Shankar Mahadevan, Javed Ali\nMusic: Shankar, Ehsaan, Loy\nLyrics: Gulzar\n\nMovie Credits:\nStarring: Abhishek Bachchan, Rani Mukerji, Amitabh Bachchan\nSpecial Appearance: Aishwarya Rai\nDirector: Shaad Ali Sahgal\nProducer: Aditya Chopra\nMusic: Shankar-Ehsaan-Loy\nLyrics: Gulzar\nMovie:  Bunty Aur Babli\nRelease Date: 27 May 2005\n\nPublisher: YRF (Yash Raj Films) Pvt. Ltd.\n\nFollow me:\nFacebook: https://www.facebook.com/profile.php?id=100004353226781\nInstagram: https://www.instagram.com/aditya_kanikdaley/?hl=en",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/HuxJ3rt_lFk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/HuxJ3rt_lFk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/HuxJ3rt_lFk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/HuxJ3rt_lFk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/HuxJ3rt_lFk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Aditya Kanikdaley",
+        "playlistId": "UUFeodEXsVCtxbqFPZwiQniQ",
+        "position": 3,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "HuxJ3rt_lFk"
+        },
+        "videoOwnerChannelTitle": "Aditya Kanikdaley",
+        "videoOwnerChannelId": "UCFeodEXsVCtxbqFPZwiQniQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Uou_or7kUFneJolM3zLUVKwue_o",
+      "id": "VVVGZW9kRVhzVkN0eGJxRlBad2lRbmlRLlkyV2xZX2kwU09n",
+      "snippet": {
+        "publishedAt": "2020-05-15T16:13:58Z",
+        "channelId": "UCFeodEXsVCtxbqFPZwiQniQ",
+        "title": "Chashni Song - Tabla Cover | Cover by Aditya Kanikdaley (Use Earphones)🎧",
+        "description": "Hey guys !\nThis is my new tabla cover on the song Chashni. \nIf you liked it, please like it, share it with your friends.😀😀\nAlso drop a comment down.\nIf you are new to this channel, don't forget to subscribe to my channel !😊😊\n\nCredits:\nT-Series\nLink - https://youtu.be/fUS31GnQuBU\nMovie - Bharat\nSong - Chashni Song\nArtist - Vishal & Shekhar feat. Abhijeet Srivastava\nLyrics: Irshad Kamil\nMusic Producers @ Flying Carpet Productions - Aman Moroney, Ashish Manchanda\n\nSong Credits: \nLink - https://youtu.be/DoqbT3L5mOU\nI would like to thank Hemant Raagi for his wonderful voice in this video.\nSinger - Hemant Raagi\n \nFollow me:\nFacebook: https://www.facebook.com/profile.php?id=100004353226781\nInstagram: https://www.instagram.com/aditya_kanikdaley/?hl=en",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Y2WlY_i0SOg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Y2WlY_i0SOg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Y2WlY_i0SOg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Y2WlY_i0SOg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Y2WlY_i0SOg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Aditya Kanikdaley",
+        "playlistId": "UUFeodEXsVCtxbqFPZwiQniQ",
+        "position": 4,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "Y2WlY_i0SOg"
+        },
+        "videoOwnerChannelTitle": "Aditya Kanikdaley",
+        "videoOwnerChannelId": "UCFeodEXsVCtxbqFPZwiQniQ"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 6,
+    "resultsPerPage": 5
+  }
+}
