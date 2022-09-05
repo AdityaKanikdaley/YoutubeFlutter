@@ -14,3 +14,6 @@ This app is created to display [My Youtube Channel](https://www.youtube.com/chan
 
 ## API Used:
 Google's [YouTube Data API v3](https://console.cloud.google.com/apis/library/youtube.googleapis.com?project=rising-area-317709)
+
+## License:
+[License](https://github.com/AdityaKanikdaley/YoutubeFlutter/blob/master/LICENSE)
