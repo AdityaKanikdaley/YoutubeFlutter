@@ -1,12 +1,11 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:youtube/models/channel_info.dart';
 import 'package:youtube/models/video_list.dart';
 import 'package:youtube/screens/video_screen.dart';
 import 'package:youtube/screens/webView.dart';
 import 'package:youtube/utils/services.dart';
-import 'package:intl/intl.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -14,7 +13,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  //
   ChannelInfo _channelInfo;
   VideosList _videosList;
   Item _item;
@@ -62,69 +60,144 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[850],
       appBar: AppBar(
-        title: Text(_loading ? 'Loading...' : 'YouTube'),
-      ),
-      body: Container(
-        color: Colors.white,
+          backgroundColor: Colors.grey[900],
+          elevation: 0.0,
+          centerTitle: true,
+          iconTheme: IconThemeData(color: Colors.black),
+          title: _loading
+              ? Text('Loading...')
+              : Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const <Widget>[
+                    Text(
+                      "Youtube",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Text(
+                      "Flutter",
+                      style: TextStyle(color: Colors.blue),
+                    )
+                  ],
+                )
+          // title: Text(_loading ? 'Loading...' : 'YouTubeFlutter'),
+          ),
+      body: SingleChildScrollView(
         child: Column(
           children: [
             _buildInfoView(),
-            Expanded(
-              child: NotificationListener<ScrollEndNotification>(
-                onNotification: (ScrollNotification notification) {
-                  if (_videosList.videos.length >=
-                      int.parse(_item.statistics.videoCount)) {
-                    return true;
-                  }
-                  if (notification.metrics.pixels ==
-                      notification.metrics.maxScrollExtent) {
-                    _loadVideos();
-                  }
+            NotificationListener<ScrollEndNotification>(
+              onNotification: (ScrollNotification notification) {
+                if (_videosList.videos.length >=
+                    int.parse(_item.statistics.videoCount)) {
                   return true;
-                },
-                child: ListView.builder(
-                  controller: _scrollController,
-                  itemCount: _videosList.videos.length,
-                  itemBuilder: (context, index) {
-                    VideoItem videoItem = _videosList.videos[index];
-                    return InkWell(
-                      onTap: () async {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) {
-                          return VideoPlayerScreen(
-                            videoItem: videoItem,
-                          );
-                        }));
-                      },
-                      child: Container(
-                        padding: EdgeInsets.all(20.0),
-                        child: Row(
-                          children: [
-                            CachedNetworkImage(
-                              imageUrl: videoItem
-                                  .video.thumbnails.thumbnailsDefault.url,
+                }
+                if (notification.metrics.pixels ==
+                    notification.metrics.maxScrollExtent) {
+                  _loadVideos();
+                }
+                return true;
+              },
+              child: ListView.builder(
+                controller: _scrollController,
+                itemCount: _videosList.videos.length,
+                scrollDirection: Axis.vertical,
+                shrinkWrap: true,
+                itemBuilder: (context, index) {
+                  VideoItem videoItem = _videosList.videos[index];
+                  return InkWell(
+                    onTap: () async {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return VideoPlayerScreen(
+                          videoItem: videoItem,
+                        );
+                      }));
+                    },
+                    child: Container(
+                      margin: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                          color: Colors.grey[850],
+                          borderRadius: BorderRadius.circular(6.0),
+                          boxShadow: [
+                            BoxShadow(
+                              //bottom
+                              color: Colors.black54,
+                              offset: Offset(5, 5),
+                              blurRadius: 8,
                             ),
-                            SizedBox(width: 20),
-                            Flexible(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(videoItem.video.title),
-                                  SizedBox(height: 8),
-                                  Text("Published on: ${dateFormat.format(videoItem.video.publishedAt)}")
-                                  // ${videoItem.video.publishedAt}
-                                ],
-                              ),
+                            BoxShadow(
+                              //top
+                              color: Colors.grey[800],
+                              offset: Offset(-4, -4),
+                              blurRadius: 6.0,
                             )
-                          ],
-                        ),
+                          ]),
+                      padding: EdgeInsets.all(20.0),
+                      child: Row(
+                        children: [
+                          CachedNetworkImage(
+                            imageUrl: videoItem
+                                .video.thumbnails.thumbnailsDefault.url,
+                          ),
+                          SizedBox(width: 20),
+                          Flexible(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  videoItem.video.title,
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                SizedBox(height: 8),
+                                Text(
+                                  "Published on: ${dateFormat.format(videoItem.video.publishedAt)}",
+                                  style: TextStyle(color: Colors.white),
+                                )
+                              ],
+                            ),
+                          )
+                        ],
                       ),
-                    );
-                  },
-                ),
+                    ),
+                  );
+                },
               ),
             ),
+            !_loading
+                ? Container(
+                    width: MediaQuery.of(context).size.width,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                        color: Colors.grey[850],
+                        borderRadius: BorderRadius.circular(6.0),
+                        boxShadow: [
+                          BoxShadow(
+                            //bottom
+                            color: Colors.black54,
+                            offset: Offset(5, 5),
+                            blurRadius: 8,
+                          ),
+                          BoxShadow(
+                            //top
+                            color: Colors.grey[800],
+                            offset: Offset(-4, -4),
+                            blurRadius: 6.0,
+                          )
+                        ]),
+                    child: TextButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => webView()));
+                      },
+                      child: const Text(
+                        'Search in Youtube',
+                        style: TextStyle(fontSize: 16),
+                      ),
+                    ),
+                  )
+                : Container(),
           ],
         ),
       ),
@@ -133,46 +206,62 @@ class _HomeScreenState extends State<HomeScreen> {
 
   _buildInfoView() {
     return _loading
-        ? CircularProgressIndicator()
+        ? Container(
+            alignment: Alignment.center,
+            height: MediaQuery.of(context).size.height * 0.8,
+            child: CircularProgressIndicator())
         : Container(
             padding: EdgeInsets.all(20.0),
-            child: Card(
-              child: Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      CircleAvatar(
-                        radius: 50,
-                        backgroundImage: CachedNetworkImageProvider(
-                          _item.snippet.thumbnails.medium.url,
-                        ),
-                      ),
-                      SizedBox(width: 20),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Text(
-                            _item.snippet.title,
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                          SizedBox(height: 5),
-                          Text('Videos: ${_item.statistics.videoCount}'),
-                        ],
-                      )
-                      // IconButton(
-                      //     onPressed: (){
-                      //       Navigator.push(context, MaterialPageRoute(builder: (context)=> webView()));
-                      //     },
-                      //     icon: Icon(Icons.youtube_searched_for)),
-                    ],
+            child: Container(
+              padding: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                  color: Colors.grey[850],
+                  borderRadius: BorderRadius.circular(6.0),
+                  boxShadow: [
+                    BoxShadow(
+                      //bottom
+                      color: Colors.black54,
+                      offset: Offset(5, 5),
+                      blurRadius: 6.0,
+                    ),
+                    BoxShadow(
+                      //top
+                      color: Colors.grey[800],
+                      offset: Offset(-5, -5),
+                      blurRadius: 6.0,
+                    )
+                  ]),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  CircleAvatar(
+                    radius: 100,
+                    backgroundImage: CachedNetworkImageProvider(
+                      _item.snippet.thumbnails.medium.url,
+                    ),
                   ),
-                ),
+                  SizedBox(height: 10),
+                  Text(
+                    _item.snippet.title,
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                        color: Colors.white),
+                  ),
+                  SizedBox(height: 5),
+                  Text('Videos: ${_item.statistics.videoCount}',
+                      style: TextStyle(color: Colors.white)),
+                  SizedBox(height: 5),
+                  Text('Subscribers: ${_item.statistics.subscriberCount}',
+                      style: TextStyle(color: Colors.white)),
+                  SizedBox(height: 5),
+                  Text(_item.snippet.description,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        height: 1.5,
+                        color: Colors.white,
+                      ))
+                ],
               ),
             ),
           );
